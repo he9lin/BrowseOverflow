@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD76C06415AB4C86006F0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06315AB4C86006F0D49 /* UIKit.framework */; };
+		FD76C06615AB4C86006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
+		FD76C06815AB4C86006F0D49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */; };
+		FD76C06E15AB4C86006F0D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD76C06C15AB4C86006F0D49 /* InfoPlist.strings */; };
+		FD76C07015AB4C86006F0D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C06F15AB4C86006F0D49 /* main.m */; };
+		FD76C07415AB4C86006F0D49 /* BOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C07315AB4C86006F0D49 /* BOAppDelegate.m */; };
+		FD76C07715AB4C86006F0D49 /* BOMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C07615AB4C86006F0D49 /* BOMasterViewController.m */; };
+		FD76C07A15AB4C86006F0D49 /* BODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C07915AB4C86006F0D49 /* BODetailViewController.m */; };
+		FD76C07D15AB4C86006F0D49 /* BOMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD76C07B15AB4C86006F0D49 /* BOMasterViewController.xib */; };
+		FD76C08015AB4C86006F0D49 /* BODetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD76C07E15AB4C86006F0D49 /* BODetailViewController.xib */; };
+		FD76C08815AB4C87006F0D49 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C08715AB4C87006F0D49 /* SenTestingKit.framework */; };
+		FD76C08915AB4C87006F0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06315AB4C86006F0D49 /* UIKit.framework */; };
+		FD76C08A15AB4C87006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
+		FD76C09215AB4C87006F0D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD76C09015AB4C87006F0D49 /* InfoPlist.strings */; };
+		FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD76C08B15AB4C87006F0D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD76C05615AB4C86006F0D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD76C05E15AB4C86006F0D49;
+			remoteInfo = BrowseOverflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD76C05F15AB4C86006F0D49 /* BrowseOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD76C06315AB4C86006F0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD76C06515AB4C86006F0D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD76C06B15AB4C86006F0D49 /* BrowseOverflow-Info.plist */ = {isa = PBXFileReference; path = "BrowseOverflow-Info.plist"; sourceTree = "<group>"; };
+		FD76C06D15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD76C06F15AB4C86006F0D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD76C07115AB4C86006F0D49 /* BrowseOverflow-Prefix.pch */ = {isa = PBXFileReference; path = "BrowseOverflow-Prefix.pch"; sourceTree = "<group>"; };
+		FD76C07215AB4C86006F0D49 /* BOAppDelegate.h */ = {isa = PBXFileReference; path = BOAppDelegate.h; sourceTree = "<group>"; };
+		FD76C07315AB4C86006F0D49 /* BOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOAppDelegate.m; sourceTree = "<group>"; };
+		FD76C07515AB4C86006F0D49 /* BOMasterViewController.h */ = {isa = PBXFileReference; path = BOMasterViewController.h; sourceTree = "<group>"; };
+		FD76C07615AB4C86006F0D49 /* BOMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOMasterViewController.m; sourceTree = "<group>"; };
+		FD76C07815AB4C86006F0D49 /* BODetailViewController.h */ = {isa = PBXFileReference; path = BODetailViewController.h; sourceTree = "<group>"; };
+		FD76C07915AB4C86006F0D49 /* BODetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BODetailViewController.m; sourceTree = "<group>"; };
+		FD76C07C15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BOMasterViewController.xib; sourceTree = "<group>"; };
+		FD76C07F15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BODetailViewController.xib; sourceTree = "<group>"; };
+		FD76C08615AB4C87006F0D49 /* BrowseOverflowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD76C08715AB4C87006F0D49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD76C08F15AB4C87006F0D49 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
+		FD76C09115AB4C87006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */ = {isa = PBXFileReference; path = BrowseOverflowTests.h; sourceTree = "<group>"; };
+		FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD76C05C15AB4C86006F0D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C06415AB4C86006F0D49 /* UIKit.framework in Frameworks */,
+				FD76C06615AB4C86006F0D49 /* Foundation.framework in Frameworks */,
+				FD76C06815AB4C86006F0D49 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD76C08215AB4C87006F0D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C08815AB4C87006F0D49 /* SenTestingKit.framework in Frameworks */,
+				FD76C08915AB4C87006F0D49 /* UIKit.framework in Frameworks */,
+				FD76C08A15AB4C87006F0D49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD76C05415AB4C86006F0D49 = {
+			isa = PBXGroup;
+			children = (
+				FD76C06915AB4C86006F0D49 /* BrowseOverflow */,
+				FD76C08D15AB4C87006F0D49 /* BrowseOverflowTests */,
+				FD76C06215AB4C86006F0D49 /* Frameworks */,
+				FD76C06015AB4C86006F0D49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD76C06015AB4C86006F0D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C05F15AB4C86006F0D49 /* BrowseOverflow.app */,
+				FD76C08615AB4C87006F0D49 /* BrowseOverflowTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD76C06215AB4C86006F0D49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C06315AB4C86006F0D49 /* UIKit.framework */,
+				FD76C06515AB4C86006F0D49 /* Foundation.framework */,
+				FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */,
+				FD76C08715AB4C87006F0D49 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD76C06915AB4C86006F0D49 /* BrowseOverflow */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C07215AB4C86006F0D49 /* BOAppDelegate.h */,
+				FD76C07315AB4C86006F0D49 /* BOAppDelegate.m */,
+				FD76C07515AB4C86006F0D49 /* BOMasterViewController.h */,
+				FD76C07615AB4C86006F0D49 /* BOMasterViewController.m */,
+				FD76C07815AB4C86006F0D49 /* BODetailViewController.h */,
+				FD76C07915AB4C86006F0D49 /* BODetailViewController.m */,
+				FD76C07B15AB4C86006F0D49 /* BOMasterViewController.xib */,
+				FD76C07E15AB4C86006F0D49 /* BODetailViewController.xib */,
+				FD76C06A15AB4C86006F0D49 /* Supporting Files */,
+			);
+			path = BrowseOverflow;
+			sourceTree = "<group>";
+		};
+		FD76C06A15AB4C86006F0D49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C06B15AB4C86006F0D49 /* BrowseOverflow-Info.plist */,
+				FD76C06C15AB4C86006F0D49 /* InfoPlist.strings */,
+				FD76C06F15AB4C86006F0D49 /* main.m */,
+				FD76C07115AB4C86006F0D49 /* BrowseOverflow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD76C08D15AB4C87006F0D49 /* BrowseOverflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */,
+				FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */,
+				FD76C08E15AB4C87006F0D49 /* Supporting Files */,
+			);
+			path = BrowseOverflowTests;
+			sourceTree = "<group>";
+		};
+		FD76C08E15AB4C87006F0D49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD76C08F15AB4C87006F0D49 /* BrowseOverflowTests-Info.plist */,
+				FD76C09015AB4C87006F0D49 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD76C05E15AB4C86006F0D49 /* BrowseOverflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD76C09815AB4C87006F0D49 /* Build configuration list for PBXNativeTarget "BrowseOverflow" */;
+			buildPhases = (
+				FD76C05B15AB4C86006F0D49 /* Sources */,
+				FD76C05C15AB4C86006F0D49 /* Frameworks */,
+				FD76C05D15AB4C86006F0D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrowseOverflow;
+			productName = BrowseOverflow;
+			productReference = FD76C05F15AB4C86006F0D49 /* BrowseOverflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD76C08515AB4C87006F0D49 /* BrowseOverflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD76C09B15AB4C87006F0D49 /* Build configuration list for PBXNativeTarget "BrowseOverflowTests" */;
+			buildPhases = (
+				FD76C08115AB4C87006F0D49 /* Sources */,
+				FD76C08215AB4C87006F0D49 /* Frameworks */,
+				FD76C08315AB4C87006F0D49 /* Resources */,
+				FD76C08415AB4C87006F0D49 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD76C08C15AB4C87006F0D49 /* PBXTargetDependency */,
+			);
+			name = BrowseOverflowTests;
+			productName = BrowseOverflowTests;
+			productReference = FD76C08615AB4C87006F0D49 /* BrowseOverflowTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD76C05615AB4C86006F0D49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Heyook;
+			};
+			buildConfigurationList = FD76C05915AB4C86006F0D49 /* Build configuration list for PBXProject "BrowseOverflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD76C05415AB4C86006F0D49;
+			productRefGroup = FD76C06015AB4C86006F0D49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD76C05E15AB4C86006F0D49 /* BrowseOverflow */,
+				FD76C08515AB4C87006F0D49 /* BrowseOverflowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD76C05D15AB4C86006F0D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C06E15AB4C86006F0D49 /* InfoPlist.strings in Resources */,
+				FD76C07D15AB4C86006F0D49 /* BOMasterViewController.xib in Resources */,
+				FD76C08015AB4C86006F0D49 /* BODetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD76C08315AB4C87006F0D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C09215AB4C87006F0D49 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD76C08415AB4C87006F0D49 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD76C05B15AB4C86006F0D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C07015AB4C86006F0D49 /* main.m in Sources */,
+				FD76C07415AB4C86006F0D49 /* BOAppDelegate.m in Sources */,
+				FD76C07715AB4C86006F0D49 /* BOMasterViewController.m in Sources */,
+				FD76C07A15AB4C86006F0D49 /* BODetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD76C08115AB4C87006F0D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD76C08C15AB4C87006F0D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD76C05E15AB4C86006F0D49 /* BrowseOverflow */;
+			targetProxy = FD76C08B15AB4C87006F0D49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD76C06C15AB4C86006F0D49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD76C06D15AB4C86006F0D49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD76C07B15AB4C86006F0D49 /* BOMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD76C07C15AB4C86006F0D49 /* en */,
+			);
+			name = BOMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		FD76C07E15AB4C86006F0D49 /* BODetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD76C07F15AB4C86006F0D49 /* en */,
+			);
+			name = BODetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		FD76C09015AB4C87006F0D49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD76C09115AB4C87006F0D49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD76C09615AB4C87006F0D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD76C09715AB4C87006F0D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD76C09915AB4C87006F0D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
+				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD76C09A15AB4C87006F0D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
+				INFOPLIST_FILE = "BrowseOverflow/BrowseOverflow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD76C09C15AB4C87006F0D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
+				INFOPLIST_FILE = "BrowseOverflowTests/BrowseOverflowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FD76C09D15AB4C87006F0D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseOverflow/BrowseOverflow-Prefix.pch";
+				INFOPLIST_FILE = "BrowseOverflowTests/BrowseOverflowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD76C05915AB4C86006F0D49 /* Build configuration list for PBXProject "BrowseOverflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD76C09615AB4C87006F0D49 /* Debug */,
+				FD76C09715AB4C87006F0D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD76C09815AB4C87006F0D49 /* Build configuration list for PBXNativeTarget "BrowseOverflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD76C09915AB4C87006F0D49 /* Debug */,
+				FD76C09A15AB4C87006F0D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD76C09B15AB4C87006F0D49 /* Build configuration list for PBXNativeTarget "BrowseOverflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD76C09C15AB4C87006F0D49 /* Debug */,
+				FD76C09D15AB4C87006F0D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD76C05615AB4C86006F0D49 /* Project object */;
+}
