@@ -22,6 +22,15 @@
 		FD76C08A15AB4C87006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
 		FD76C09215AB4C87006F0D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD76C09015AB4C87006F0D49 /* InfoPlist.strings */; };
 		FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */; };
+		FD76C0A315AB513C006F0D49 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A215AB513C006F0D49 /* TopicTests.m */; };
+		FD76C0A615AB519E006F0D49 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A515AB519E006F0D49 /* Topic.m */; };
+		FD76C0A915AB7B51006F0D49 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A815AB7B51006F0D49 /* QuestionTests.m */; };
+		FD76C0AC15AB7B92006F0D49 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0AB15AB7B92006F0D49 /* Question.m */; };
+		FD76C0AD15AB7B92006F0D49 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0AB15AB7B92006F0D49 /* Question.m */; };
+		FD76C0B015AB8113006F0D49 /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0AF15AB8112006F0D49 /* PersonTests.m */; };
+		FD76C0B315AB8135006F0D49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B215AB8135006F0D49 /* Person.m */; };
+		FD76C0B415AB8135006F0D49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B215AB8135006F0D49 /* Person.m */; };
+		FD76C0B515AB9CE8006F0D49 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A515AB519E006F0D49 /* Topic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +48,36 @@
 		FD76C06315AB4C86006F0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD76C06515AB4C86006F0D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FD76C06B15AB4C86006F0D49 /* BrowseOverflow-Info.plist */ = {isa = PBXFileReference; path = "BrowseOverflow-Info.plist"; sourceTree = "<group>"; };
+		FD76C06B15AB4C86006F0D49 /* BrowseOverflow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflow-Info.plist"; sourceTree = "<group>"; };
 		FD76C06D15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD76C06F15AB4C86006F0D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD76C07115AB4C86006F0D49 /* BrowseOverflow-Prefix.pch */ = {isa = PBXFileReference; path = "BrowseOverflow-Prefix.pch"; sourceTree = "<group>"; };
-		FD76C07215AB4C86006F0D49 /* BOAppDelegate.h */ = {isa = PBXFileReference; path = BOAppDelegate.h; sourceTree = "<group>"; };
+		FD76C07115AB4C86006F0D49 /* BrowseOverflow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseOverflow-Prefix.pch"; sourceTree = "<group>"; };
+		FD76C07215AB4C86006F0D49 /* BOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOAppDelegate.h; sourceTree = "<group>"; };
 		FD76C07315AB4C86006F0D49 /* BOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOAppDelegate.m; sourceTree = "<group>"; };
-		FD76C07515AB4C86006F0D49 /* BOMasterViewController.h */ = {isa = PBXFileReference; path = BOMasterViewController.h; sourceTree = "<group>"; };
+		FD76C07515AB4C86006F0D49 /* BOMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOMasterViewController.h; sourceTree = "<group>"; };
 		FD76C07615AB4C86006F0D49 /* BOMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOMasterViewController.m; sourceTree = "<group>"; };
-		FD76C07815AB4C86006F0D49 /* BODetailViewController.h */ = {isa = PBXFileReference; path = BODetailViewController.h; sourceTree = "<group>"; };
+		FD76C07815AB4C86006F0D49 /* BODetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BODetailViewController.h; sourceTree = "<group>"; };
 		FD76C07915AB4C86006F0D49 /* BODetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BODetailViewController.m; sourceTree = "<group>"; };
 		FD76C07C15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BOMasterViewController.xib; sourceTree = "<group>"; };
 		FD76C07F15AB4C86006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BODetailViewController.xib; sourceTree = "<group>"; };
 		FD76C08615AB4C87006F0D49 /* BrowseOverflowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD76C08715AB4C87006F0D49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FD76C08F15AB4C87006F0D49 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
+		FD76C08F15AB4C87006F0D49 /* BrowseOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		FD76C09115AB4C87006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */ = {isa = PBXFileReference; path = BrowseOverflowTests.h; sourceTree = "<group>"; };
+		FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseOverflowTests.h; sourceTree = "<group>"; };
 		FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
+		FD76C0A115AB513C006F0D49 /* TopicTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicTests.h; path = ../TopicTests.h; sourceTree = "<group>"; };
+		FD76C0A215AB513C006F0D49 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicTests.m; path = ../TopicTests.m; sourceTree = "<group>"; };
+		FD76C0A415AB519E006F0D49 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Topic.h; path = BrowseOverflowTests/Topic.h; sourceTree = SOURCE_ROOT; };
+		FD76C0A515AB519E006F0D49 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Topic.m; path = BrowseOverflowTests/Topic.m; sourceTree = SOURCE_ROOT; };
+		FD76C0A715AB7B51006F0D49 /* QuestionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTests.h; sourceTree = "<group>"; };
+		FD76C0A815AB7B51006F0D49 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		FD76C0AA15AB7B92006F0D49 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = BrowseOverflowTests/Question.h; sourceTree = SOURCE_ROOT; };
+		FD76C0AB15AB7B92006F0D49 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = BrowseOverflowTests/Question.m; sourceTree = SOURCE_ROOT; };
+		FD76C0AE15AB8112006F0D49 /* PersonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTests.h; sourceTree = "<group>"; };
+		FD76C0AF15AB8112006F0D49 /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
+		FD76C0B115AB8135006F0D49 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FD76C0B215AB8135006F0D49 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +139,19 @@
 			children = (
 				FD76C07215AB4C86006F0D49 /* BOAppDelegate.h */,
 				FD76C07315AB4C86006F0D49 /* BOAppDelegate.m */,
+				FD76C0A415AB519E006F0D49 /* Topic.h */,
+				FD76C0A515AB519E006F0D49 /* Topic.m */,
 				FD76C07515AB4C86006F0D49 /* BOMasterViewController.h */,
 				FD76C07615AB4C86006F0D49 /* BOMasterViewController.m */,
+				FD76C0AA15AB7B92006F0D49 /* Question.h */,
+				FD76C0AB15AB7B92006F0D49 /* Question.m */,
 				FD76C07815AB4C86006F0D49 /* BODetailViewController.h */,
 				FD76C07915AB4C86006F0D49 /* BODetailViewController.m */,
 				FD76C07B15AB4C86006F0D49 /* BOMasterViewController.xib */,
 				FD76C07E15AB4C86006F0D49 /* BODetailViewController.xib */,
 				FD76C06A15AB4C86006F0D49 /* Supporting Files */,
+				FD76C0B115AB8135006F0D49 /* Person.h */,
+				FD76C0B215AB8135006F0D49 /* Person.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -143,9 +170,15 @@
 		FD76C08D15AB4C87006F0D49 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				FD76C0A115AB513C006F0D49 /* TopicTests.h */,
+				FD76C0A215AB513C006F0D49 /* TopicTests.m */,
+				FD76C0A715AB7B51006F0D49 /* QuestionTests.h */,
+				FD76C0A815AB7B51006F0D49 /* QuestionTests.m */,
 				FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */,
 				FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */,
 				FD76C08E15AB4C87006F0D49 /* Supporting Files */,
+				FD76C0AE15AB8112006F0D49 /* PersonTests.h */,
+				FD76C0AF15AB8112006F0D49 /* PersonTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -271,6 +304,9 @@
 				FD76C07415AB4C86006F0D49 /* BOAppDelegate.m in Sources */,
 				FD76C07715AB4C86006F0D49 /* BOMasterViewController.m in Sources */,
 				FD76C07A15AB4C86006F0D49 /* BODetailViewController.m in Sources */,
+				FD76C0A615AB519E006F0D49 /* Topic.m in Sources */,
+				FD76C0AC15AB7B92006F0D49 /* Question.m in Sources */,
+				FD76C0B315AB8135006F0D49 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */,
+				FD76C0A315AB513C006F0D49 /* TopicTests.m in Sources */,
+				FD76C0A915AB7B51006F0D49 /* QuestionTests.m in Sources */,
+				FD76C0AD15AB7B92006F0D49 /* Question.m in Sources */,
+				FD76C0B015AB8113006F0D49 /* PersonTests.m in Sources */,
+				FD76C0B415AB8135006F0D49 /* Person.m in Sources */,
+				FD76C0B515AB9CE8006F0D49 /* Topic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
