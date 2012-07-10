@@ -14,3 +14,9 @@
                          error: (NSError **)error;
 
 @end
+
+extern NSString *QuestionBuilderErrorDomain;
+
+enum {
+    QuestionBuilderInvalidJSONError
+};

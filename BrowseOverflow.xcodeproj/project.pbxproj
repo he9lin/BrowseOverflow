@@ -11,6 +11,7 @@
 		FD5DCA5A15AC68DD0084B6F0 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA5615AC68DD0084B6F0 /* Question.m */; };
 		FD5DCA5B15AC68DD0084B6F0 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA5815AC68DD0084B6F0 /* Topic.m */; };
 		FD5DCA5C15AC68DD0084B6F0 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA5815AC68DD0084B6F0 /* Topic.m */; };
+		FD5DCA5F15AC737C0084B6F0 /* QuestionBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA5E15AC737C0084B6F0 /* QuestionBuilderTests.m */; };
 		FD76C06415AB4C86006F0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06315AB4C86006F0D49 /* UIKit.framework */; };
 		FD76C06615AB4C86006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
 		FD76C06815AB4C86006F0D49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */; };
@@ -61,6 +62,8 @@
 		FD5DCA5615AC68DD0084B6F0 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		FD5DCA5715AC68DD0084B6F0 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		FD5DCA5815AC68DD0084B6F0 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		FD5DCA5D15AC737C0084B6F0 /* QuestionBuilderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionBuilderTests.h; sourceTree = "<group>"; };
+		FD5DCA5E15AC737C0084B6F0 /* QuestionBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionBuilderTests.m; sourceTree = "<group>"; };
 		FD76C05F15AB4C86006F0D49 /* BrowseOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD76C06315AB4C86006F0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD76C06515AB4C86006F0D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -232,6 +235,8 @@
 				FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */,
 				FD76C0D415AC0C19006F0D49 /* FakeQuestionBuilder.h */,
 				FD76C0D515AC0C19006F0D49 /* FakeQuestionBuilder.m */,
+				FD5DCA5D15AC737C0084B6F0 /* QuestionBuilderTests.h */,
+				FD5DCA5E15AC737C0084B6F0 /* QuestionBuilderTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				FD76C0D615AC0C19006F0D49 /* FakeQuestionBuilder.m in Sources */,
 				FD5DCA5A15AC68DD0084B6F0 /* Question.m in Sources */,
 				FD5DCA5C15AC68DD0084B6F0 /* Topic.m in Sources */,
+				FD5DCA5F15AC737C0084B6F0 /* QuestionBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
