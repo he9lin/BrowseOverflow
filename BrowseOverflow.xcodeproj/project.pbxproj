@@ -22,6 +22,7 @@
 		FD5DCA7615ACA6FE0084B6F0 /* AnswerBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA7515ACA6FE0084B6F0 /* AnswerBuilderTests.m */; };
 		FD5DCA7915ACA75C0084B6F0 /* AnswerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA7815ACA75C0084B6F0 /* AnswerBuilder.m */; };
 		FD5DCA7A15ACA75C0084B6F0 /* AnswerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA7815ACA75C0084B6F0 /* AnswerBuilder.m */; };
+		FD5DCA7D15ACAA090084B6F0 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5DCA7C15ACAA080084B6F0 /* TopicTests.m */; };
 		FD76C06415AB4C86006F0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06315AB4C86006F0D49 /* UIKit.framework */; };
 		FD76C06615AB4C86006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
 		FD76C06815AB4C86006F0D49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06715AB4C86006F0D49 /* CoreGraphics.framework */; };
@@ -37,7 +38,6 @@
 		FD76C08A15AB4C87006F0D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76C06515AB4C86006F0D49 /* Foundation.framework */; };
 		FD76C09215AB4C87006F0D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD76C09015AB4C87006F0D49 /* InfoPlist.strings */; };
 		FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */; };
-		FD76C0A315AB513C006F0D49 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A215AB513C006F0D49 /* TopicTests.m */; };
 		FD76C0A915AB7B51006F0D49 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A815AB7B51006F0D49 /* QuestionTests.m */; };
 		FD76C0B015AB8113006F0D49 /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0AF15AB8112006F0D49 /* PersonTests.m */; };
 		FD76C0B315AB8135006F0D49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B215AB8135006F0D49 /* Person.m */; };
@@ -90,6 +90,8 @@
 		FD5DCA7515ACA6FE0084B6F0 /* AnswerBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerBuilderTests.m; sourceTree = "<group>"; };
 		FD5DCA7715ACA75B0084B6F0 /* AnswerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerBuilder.h; sourceTree = "<group>"; };
 		FD5DCA7815ACA75C0084B6F0 /* AnswerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerBuilder.m; sourceTree = "<group>"; };
+		FD5DCA7B15ACAA080084B6F0 /* TopicTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTests.h; sourceTree = "<group>"; };
+		FD5DCA7C15ACAA080084B6F0 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
 		FD76C05F15AB4C86006F0D49 /* BrowseOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD76C06315AB4C86006F0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD76C06515AB4C86006F0D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,8 +114,6 @@
 		FD76C09115AB4C87006F0D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseOverflowTests.h; sourceTree = "<group>"; };
 		FD76C09415AB4C87006F0D49 /* BrowseOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseOverflowTests.m; sourceTree = "<group>"; };
-		FD76C0A115AB513C006F0D49 /* TopicTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicTests.h; path = ../TopicTests.h; sourceTree = "<group>"; };
-		FD76C0A215AB513C006F0D49 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicTests.m; path = ../TopicTests.m; sourceTree = "<group>"; };
 		FD76C0A715AB7B51006F0D49 /* QuestionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTests.h; sourceTree = "<group>"; };
 		FD76C0A815AB7B51006F0D49 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
 		FD76C0AE15AB8112006F0D49 /* PersonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTests.h; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		FD76C08D15AB4C87006F0D49 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD76C0A115AB513C006F0D49 /* TopicTests.h */,
-				FD76C0A215AB513C006F0D49 /* TopicTests.m */,
+				FD5DCA7B15ACAA080084B6F0 /* TopicTests.h */,
+				FD5DCA7C15ACAA080084B6F0 /* TopicTests.m */,
 				FD76C0A715AB7B51006F0D49 /* QuestionTests.h */,
 				FD76C0A815AB7B51006F0D49 /* QuestionTests.m */,
 				FD76C09315AB4C87006F0D49 /* BrowseOverflowTests.h */,
@@ -421,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD76C09515AB4C87006F0D49 /* BrowseOverflowTests.m in Sources */,
-				FD76C0A315AB513C006F0D49 /* TopicTests.m in Sources */,
 				FD76C0A915AB7B51006F0D49 /* QuestionTests.m in Sources */,
 				FD76C0B015AB8113006F0D49 /* PersonTests.m in Sources */,
 				FD76C0B415AB8135006F0D49 /* Person.m in Sources */,
@@ -445,6 +444,7 @@
 				FD5DCA7315ACA61F0084B6F0 /* FakeURLResponse.m in Sources */,
 				FD5DCA7615ACA6FE0084B6F0 /* AnswerBuilderTests.m in Sources */,
 				FD5DCA7A15ACA75C0084B6F0 /* AnswerBuilder.m in Sources */,
+				FD5DCA7D15ACAA090084B6F0 /* TopicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
