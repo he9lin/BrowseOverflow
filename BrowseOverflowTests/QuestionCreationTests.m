@@ -17,14 +17,30 @@
 {
 @private
     StackOverflowManager *mgr;
+    MockStackOverflowManagerDelegate *delegate;
+    NSError *underlyingError;
+    MockStackOverflowCommunicator *communicator;
 }
 
 - (void)setUp {
     mgr = [[StackOverflowManager alloc] init];
+    
+    delegate = [[MockStackOverflowManagerDelegate alloc] init];
+    mgr.delegate = delegate;
+    
+    underlyingError = [NSError errorWithDomain: @"Test domain"
+                                          code: 0 
+                                      userInfo: nil];
+    
+    communicator = [[MockStackOverflowCommunicator alloc] init];
+    mgr.communicator = communicator;
 }
 
 - (void)tearDown {
     mgr = nil;
+    delegate = nil;
+    underlyingError = nil;
+    communicator = nil;
 }
 
 - (void)testNonConformingObjectCannotBeDelegate {
@@ -46,8 +62,6 @@
 }
 
 - (void)testAskingForQuestionsMeansRequestingData {
-    MockStackOverflowCommunicator *communicator = [[MockStackOverflowCommunicator alloc] init];
-    mgr.communicator = communicator;
     Topic *topic = [[Topic alloc] initWithName: @"iPhone"
                                            tag: @"iphone"];
     [mgr fetchQuestionsOnTopic: topic];
@@ -56,20 +70,12 @@
 }
 
 - (void)testErrorReturnedToDelegateIsNotErrorNotifiedByCommunicator {
-    MockStackOverflowManagerDelegate *delegate = [[MockStackOverflowManagerDelegate alloc] init];
-    mgr.delegate = delegate;
-    NSError *underlyingError = [NSError errorWithDomain: @"Test domain"
-                                                   code: 0 userInfo: nil];
     [mgr searchingForQuestionsFailedWithError: underlyingError];
     STAssertFalse(underlyingError == [delegate fetchError],
                   @"Error should be at the correct level of abstraction");
 }
 
 - (void)testErrorReturnedToDelegateDocumentsUnderlyingError {
-    MockStackOverflowManagerDelegate *delegate = [[MockStackOverflowManagerDelegate alloc] init];
-    mgr.delegate = delegate;
-    NSError *underlyingError = [NSError errorWithDomain: @"Test domain"
-                                                   code: 0 userInfo: nil];
     [mgr searchingForQuestionsFailedWithError: underlyingError];
     STAssertEqualObjects([[[delegate fetchError] userInfo]
                           objectForKey: NSUnderlyingErrorKey], underlyingError,
