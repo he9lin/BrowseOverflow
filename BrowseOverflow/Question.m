@@ -7,13 +7,16 @@
 //
 
 #import "Question.h"
-#import "Answer.h"
+#import "Person.h"
 
 @implementation Question
 
 @synthesize date;
 @synthesize title;
+@synthesize body;
 @synthesize score;
+@synthesize questionID;
+@synthesize asker;
 
 - (id)init {
     if ((self = [super init])) {
@@ -27,8 +30,8 @@
 }
 
 - (NSArray *)answers {
-    return [[answerSet allObjects]
-            sortedArrayUsingSelector: @selector(compare:)];
+    return [[answerSet allObjects] sortedArrayUsingSelector: @selector(compare:)];
 }
+
 
 @end
