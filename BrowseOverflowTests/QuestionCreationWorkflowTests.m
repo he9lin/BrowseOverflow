@@ -62,8 +62,8 @@
 }
 
 - (void)testConformingObjectCanBeDelegate {
-    id <StackOverflowManagerDelegate> delegate = [[MockStackOverflowManagerDelegate alloc] init];
-    STAssertNoThrow(mgr.delegate = delegate,
+    id <StackOverflowManagerDelegate> del = [[MockStackOverflowManagerDelegate alloc] init];
+    STAssertNoThrow(mgr.delegate = del,
                     @"Object conforming to the delegate protocol should be used"
                     @" as the delegate");
 }
