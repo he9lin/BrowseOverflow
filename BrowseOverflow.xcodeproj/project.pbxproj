@@ -34,7 +34,7 @@
 		FD76C0B815ABA259006F0D49 /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B715ABA259006F0D49 /* AnswerTests.m */; };
 		FD76C0BB15ABA296006F0D49 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BA15ABA296006F0D49 /* Answer.m */; };
 		FD76C0BC15ABA296006F0D49 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BA15ABA296006F0D49 /* Answer.m */; };
-		FD76C0BF15ABC1E3006F0D49 /* QuestionCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BE15ABC1E3006F0D49 /* QuestionCreationTests.m */; };
+		FD76C0BF15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BE15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.m */; };
 		FD76C0C215ABC929006F0D49 /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */; };
 		FD76C0C315ABC929006F0D49 /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */; };
 		FD76C0C815ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */; };
@@ -95,8 +95,8 @@
 		FD76C0B715ABA259006F0D49 /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
 		FD76C0B915ABA296006F0D49 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
 		FD76C0BA15ABA296006F0D49 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
-		FD76C0BD15ABC1E3006F0D49 /* QuestionCreationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCreationTests.h; sourceTree = "<group>"; };
-		FD76C0BE15ABC1E3006F0D49 /* QuestionCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCreationTests.m; sourceTree = "<group>"; };
+		FD76C0BD15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCreationWorkflowTests.h; sourceTree = "<group>"; };
+		FD76C0BE15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCreationWorkflowTests.m; sourceTree = "<group>"; };
 		FD76C0C015ABC929006F0D49 /* StackOverflowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowManager.h; sourceTree = "<group>"; };
 		FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowManager.m; sourceTree = "<group>"; };
 		FD76C0C415ABCC84006F0D49 /* StackOverflowManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowManagerDelegate.h; sourceTree = "<group>"; };
@@ -224,8 +224,8 @@
 				FD76C0AF15AB8112006F0D49 /* PersonTests.m */,
 				FD76C0B615ABA259006F0D49 /* AnswerTests.h */,
 				FD76C0B715ABA259006F0D49 /* AnswerTests.m */,
-				FD76C0BD15ABC1E3006F0D49 /* QuestionCreationTests.h */,
-				FD76C0BE15ABC1E3006F0D49 /* QuestionCreationTests.m */,
+				FD76C0BD15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.h */,
+				FD76C0BE15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.m */,
 				FD76C0C615ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.h */,
 				FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */,
 				FD76C0CD15ABD962006F0D49 /* MockStackOverflowCommunicator.h */,
@@ -378,7 +378,7 @@
 				FD76C0B415AB8135006F0D49 /* Person.m in Sources */,
 				FD76C0B815ABA259006F0D49 /* AnswerTests.m in Sources */,
 				FD76C0BC15ABA296006F0D49 /* Answer.m in Sources */,
-				FD76C0BF15ABC1E3006F0D49 /* QuestionCreationTests.m in Sources */,
+				FD76C0BF15ABC1E3006F0D49 /* QuestionCreationWorkflowTests.m in Sources */,
 				FD76C0C315ABC929006F0D49 /* StackOverflowManager.m in Sources */,
 				FD76C0C815ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m in Sources */,
 				FD76C0CC15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */,
