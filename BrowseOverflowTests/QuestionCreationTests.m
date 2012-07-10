@@ -91,4 +91,16 @@
     mgr.questionBuilder = nil;
 }
 
+- (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails {
+    FakeQuestionBuilder *builder = [[FakeQuestionBuilder alloc] init];
+    builder.arrayToReturn = nil;
+    builder.errorToSet = underlyingError;
+    mgr.questionBuilder = builder;
+    [mgr receivedQuestionsJSON: @"Fake JSON"];
+    STAssertNotNil([[[delegate fetchError] userInfo]
+                    objectForKey: NSUnderlyingErrorKey],
+                   @"The delegate should have found out about the error");
+    mgr.questionBuilder = nil;
+}
+
 @end

@@ -44,7 +44,20 @@
 
 - (void)receivedQuestionsJSON:(NSString *)objectNotation {
     NSError *error = nil;
-    NSArray *questions = [questionBuilder questionsFromJSON: objectNotation error: &error];
+    NSArray *questions = [questionBuilder
+                          questionsFromJSON: objectNotation error: &error];
+    if (!questions) {
+        NSDictionary *errorInfo = nil;
+        if (error) {
+            errorInfo = [NSDictionary dictionaryWithObject: error
+                                                    forKey: NSUnderlyingErrorKey];
+        }
+        NSError *reportableError = [NSError
+                                    errorWithDomain: StackOverflowManagerError
+                                    code: StackOverflowManagerErrorQuestionSearchCode
+                                    userInfo: errorInfo];
+        [delegate fetchingQuestionsFailedWithError: reportableError];
+    }
 }
 
 #pragma mark Class Continuation
