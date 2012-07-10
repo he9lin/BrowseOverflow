@@ -12,7 +12,6 @@
 @interface MockStackOverflowManagerDelegate : NSObject <StackOverflowManagerDelegate>
 
 @property (strong) NSError *fetchError;
-
-- (BOOL)wasAskedToFetchQuestions;
+@property (strong) NSArray *fetchedQuestions;
 
 @end

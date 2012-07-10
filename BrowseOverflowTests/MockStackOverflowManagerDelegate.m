@@ -9,22 +9,16 @@
 #import "MockStackOverflowManagerDelegate.h"
 
 @implementation MockStackOverflowManagerDelegate
-{
-    BOOL wasAskedToFetchQuestions;
-}
 
 @synthesize fetchError;
+@synthesize fetchedQuestions;
 
 - (void)fetchingQuestionsFailedWithError: (NSError *)error {
     self.fetchError = error;
 }
 
-- (void)searchForQuestionsWithTag:(NSString *)tag {
-    wasAskedToFetchQuestions = YES;
-}
-
-- (BOOL)wasAskedToFetchQuestions {
-    return wasAskedToFetchQuestions;
+- (void)didReceiveQuestions:(NSArray *)questions {
+    self.fetchedQuestions = questions;
 }
 
 @end

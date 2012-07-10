@@ -12,6 +12,7 @@
 #import "MockStackOverflowCommunicator.h"
 #import "Topic.h"
 #import "FakeQuestionBuilder.h"
+#import "Question.h"
 
 @implementation QuestionCreationTests
 {
@@ -20,7 +21,8 @@
     MockStackOverflowManagerDelegate *delegate;
     NSError *underlyingError;
     MockStackOverflowCommunicator *communicator;
-    FakeQuestionBuilder *builder;
+    FakeQuestionBuilder *questionBuilder;
+    NSArray *questionArray;
 }
 
 - (void)setUp {
@@ -36,7 +38,12 @@
     communicator = [[MockStackOverflowCommunicator alloc] init];
     mgr.communicator = communicator;
     
-    builder = [[FakeQuestionBuilder alloc] init];
+    questionBuilder = [[FakeQuestionBuilder alloc] init];
+    questionBuilder.arrayToReturn = nil;
+    mgr.questionBuilder = questionBuilder;
+    
+    Question *question = [[Question alloc] init];
+    questionArray = [NSArray arrayWithObject: question];
 }
 
 - (void)tearDown {
@@ -44,6 +51,8 @@
     delegate = nil;
     underlyingError = nil;
     communicator = nil;
+    questionBuilder = nil;
+    questionArray = nil;
 }
 
 - (void)testNonConformingObjectCannotBeDelegate {
@@ -86,22 +95,31 @@
 }
 
 - (void)testQuestionJSONIsPassedToQuestionBuilder {
-    mgr.questionBuilder = builder;
     [mgr receivedQuestionsJSON: @"Fake JSON"];
-    STAssertEqualObjects(builder.JSON, @"Fake JSON",
+    STAssertEqualObjects(questionBuilder.JSON, @"Fake JSON",
                          @"Downloaded JSON is sent to the builder");
-    mgr.questionBuilder = nil;
 }
 
 - (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails {
-    builder.arrayToReturn = nil;
-    builder.errorToSet = underlyingError;
-    mgr.questionBuilder = builder;
+    questionBuilder.errorToSet = underlyingError;
     [mgr receivedQuestionsJSON: @"Fake JSON"];
     STAssertNotNil([[[delegate fetchError] userInfo]
                     objectForKey: NSUnderlyingErrorKey],
                    @"The delegate should have found out about the error");
-    mgr.questionBuilder = nil;
+}
+
+- (void)testDelegateNotToldAboutErrorWhenQuestionsReceived {
+    questionBuilder.arrayToReturn = questionArray;
+    [mgr receivedQuestionsJSON: @"Fake JSON"];
+    STAssertNil([delegate fetchError], @"No error should be received on success");
+}
+
+- (void)testDelegateReceivesTheQuestionsDiscoveredByManager {
+    questionBuilder.arrayToReturn = questionArray;
+    [mgr receivedQuestionsJSON: @"Fake JSON"];
+    STAssertEqualObjects([delegate fetchedQuestions], 
+                         questionArray, 
+                         @"The manager should have sent its questions to the delegate");
 }
 
 @end

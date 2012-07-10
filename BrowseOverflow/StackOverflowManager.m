@@ -48,6 +48,8 @@
                           questionsFromJSON: objectNotation error: &error];
     if (!questions) {
         [self tellDelegateAboutQuestionSearchError:error];
+    } else {
+        [delegate didReceiveQuestions: questions];
     }
 }
 
