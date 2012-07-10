@@ -41,6 +41,9 @@
 		FD76C0CB15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */; };
 		FD76C0CC15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */; };
 		FD76C0CF15ABD962006F0D49 /* MockStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */; };
+		FD76C0D215AC0BE8006F0D49 /* QuestionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0D115AC0BE7006F0D49 /* QuestionBuilder.m */; };
+		FD76C0D315AC0BE8006F0D49 /* QuestionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0D115AC0BE7006F0D49 /* QuestionBuilder.m */; };
+		FD76C0D615AC0C19006F0D49 /* FakeQuestionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0D515AC0C19006F0D49 /* FakeQuestionBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,11 @@
 		FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowCommunicator.m; sourceTree = "<group>"; };
 		FD76C0CD15ABD962006F0D49 /* MockStackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockStackOverflowCommunicator.h; sourceTree = "<group>"; };
 		FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockStackOverflowCommunicator.m; sourceTree = "<group>"; };
+		FD76C0D015AC0BE7006F0D49 /* QuestionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionBuilder.h; sourceTree = "<group>"; };
+		FD76C0D115AC0BE7006F0D49 /* QuestionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionBuilder.m; sourceTree = "<group>"; };
+		FD76C0D415AC0C19006F0D49 /* FakeQuestionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeQuestionBuilder.h; sourceTree = "<group>"; };
+		FD76C0D515AC0C19006F0D49 /* FakeQuestionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeQuestionBuilder.m; sourceTree = "<group>"; };
+		FD76C0D715AC0E11006F0D49 /* StackOverflowCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowCommunicatorDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,9 @@
 				FD76C0C415ABCC84006F0D49 /* StackOverflowManagerDelegate.h */,
 				FD76C0C915ABD923006F0D49 /* StackOverflowCommunicator.h */,
 				FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */,
+				FD76C0D015AC0BE7006F0D49 /* QuestionBuilder.h */,
+				FD76C0D115AC0BE7006F0D49 /* QuestionBuilder.m */,
+				FD76C0D715AC0E11006F0D49 /* StackOverflowCommunicatorDelegate.h */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -219,6 +230,8 @@
 				FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */,
 				FD76C0CD15ABD962006F0D49 /* MockStackOverflowCommunicator.h */,
 				FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */,
+				FD76C0D415AC0C19006F0D49 /* FakeQuestionBuilder.h */,
+				FD76C0D515AC0C19006F0D49 /* FakeQuestionBuilder.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -350,6 +363,7 @@
 				FD76C0BB15ABA296006F0D49 /* Answer.m in Sources */,
 				FD76C0C215ABC929006F0D49 /* StackOverflowManager.m in Sources */,
 				FD76C0CB15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */,
+				FD76C0D215AC0BE8006F0D49 /* QuestionBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +385,8 @@
 				FD76C0C815ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m in Sources */,
 				FD76C0CC15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */,
 				FD76C0CF15ABD962006F0D49 /* MockStackOverflowCommunicator.m in Sources */,
+				FD76C0D315AC0BE8006F0D49 /* QuestionBuilder.m in Sources */,
+				FD76C0D615AC0C19006F0D49 /* FakeQuestionBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

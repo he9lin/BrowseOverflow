@@ -9,6 +9,7 @@
 #import "StackOverflowManager.h"
 #import "StackOverflowCommunicator.h"
 #import "Topic.h"
+#import "QuestionBuilder.h"
 
 @interface StackOverflowManager ()
 
@@ -19,6 +20,7 @@
 @implementation StackOverflowManager
 
 @synthesize delegate, communicator;
+@synthesize questionBuilder;
 
 - (void)setDelegate:(id<StackOverflowManagerDelegate>)newDelegate {
     if (newDelegate && ![newDelegate conformsToProtocol:
@@ -38,6 +40,11 @@
 
 - (void)searchingForQuestionsFailedWithError:(NSError *)error {
     [self tellDelegateAboutQuestionSearchError: error];
+}
+
+- (void)receivedQuestionsJSON:(NSString *)objectNotation {
+    NSError *error = nil;
+    NSArray *questions = [questionBuilder questionsFromJSON: objectNotation error: &error];
 }
 
 #pragma mark Class Continuation

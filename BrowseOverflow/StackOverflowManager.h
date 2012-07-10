@@ -8,18 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "StackOverflowManagerDelegate.h"
+#import "StackOverflowCommunicatorDelegate.h"
 
 @class StackOverflowCommunicator;
 @class Topic;
+@class QuestionBuilder;
 
 /**
  * A façade providing access to the Stack Overflow service.
  * Application code should only use this class to get at Stack Overflow innards.
  */
-@interface StackOverflowManager : NSObject
+@interface StackOverflowManager : NSObject <StackOverflowCommunicatorDelegate>
 
 @property (weak, nonatomic) id <StackOverflowManagerDelegate> delegate;
 @property (strong) StackOverflowCommunicator *communicator;
+@property (strong) QuestionBuilder *questionBuilder;
 
 /**
  * Retrieve questions on a given topic from Stack Overflow.
@@ -30,8 +33,6 @@
  * @see StackOverflowManagerDelegate
  */
 - (void)fetchQuestionsOnTopic:(Topic *)topic;
-
-- (void)searchingForQuestionsFailedWithError:(NSError *)error;
 
 @end
 
