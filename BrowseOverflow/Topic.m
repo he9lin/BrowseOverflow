@@ -9,9 +9,7 @@
 #import "Question.h"
 #import "Topic.h"
 
-@implementation Topic {
-    NSArray *questions;
-}
+@implementation Topic
 
 @synthesize name, tag;
 

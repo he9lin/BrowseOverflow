@@ -10,7 +10,9 @@
 
 @class Question;
 
-@interface Topic : NSObject
+@interface Topic : NSObject {
+    NSArray *questions;
+}
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *tag;
