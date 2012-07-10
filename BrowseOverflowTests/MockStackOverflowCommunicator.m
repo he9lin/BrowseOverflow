@@ -1,22 +1,16 @@
 //
-//  MockStackOverflowManagerDelegate.m
+//  MockStackOverflowCommunicator.m
 //  BrowseOverflow
 //
 //  Created by Lin He on 7/9/12.
 //  Copyright (c) 2012 Heyook. All rights reserved.
 //
 
-#import "MockStackOverflowManagerDelegate.h"
+#import "MockStackOverflowCommunicator.h"
 
-@implementation MockStackOverflowManagerDelegate
+@implementation MockStackOverflowCommunicator
 {
     BOOL wasAskedToFetchQuestions;
-}
-
-@synthesize fetchError;
-
-- (void)fetchingQuestionsFailedWithError: (NSError *)error {
-    self.fetchError = error;
 }
 
 - (void)searchForQuestionsWithTag:(NSString *)tag {

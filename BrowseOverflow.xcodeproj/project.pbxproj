@@ -38,6 +38,9 @@
 		FD76C0C215ABC929006F0D49 /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */; };
 		FD76C0C315ABC929006F0D49 /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */; };
 		FD76C0C815ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */; };
+		FD76C0CB15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */; };
+		FD76C0CC15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */; };
+		FD76C0CF15ABD962006F0D49 /* MockStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,10 @@
 		FD76C0C415ABCC84006F0D49 /* StackOverflowManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowManagerDelegate.h; sourceTree = "<group>"; };
 		FD76C0C615ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockStackOverflowManagerDelegate.h; sourceTree = "<group>"; };
 		FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockStackOverflowManagerDelegate.m; sourceTree = "<group>"; };
+		FD76C0C915ABD923006F0D49 /* StackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowCommunicator.h; sourceTree = "<group>"; };
+		FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowCommunicator.m; sourceTree = "<group>"; };
+		FD76C0CD15ABD962006F0D49 /* MockStackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockStackOverflowCommunicator.h; sourceTree = "<group>"; };
+		FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockStackOverflowCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +182,8 @@
 				FD76C0C015ABC929006F0D49 /* StackOverflowManager.h */,
 				FD76C0C115ABC929006F0D49 /* StackOverflowManager.m */,
 				FD76C0C415ABCC84006F0D49 /* StackOverflowManagerDelegate.h */,
+				FD76C0C915ABD923006F0D49 /* StackOverflowCommunicator.h */,
+				FD76C0CA15ABD923006F0D49 /* StackOverflowCommunicator.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -208,6 +217,8 @@
 				FD76C0BE15ABC1E3006F0D49 /* QuestionCreationTests.m */,
 				FD76C0C615ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.h */,
 				FD76C0C715ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m */,
+				FD76C0CD15ABD962006F0D49 /* MockStackOverflowCommunicator.h */,
+				FD76C0CE15ABD962006F0D49 /* MockStackOverflowCommunicator.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -338,6 +349,7 @@
 				FD76C0B315AB8135006F0D49 /* Person.m in Sources */,
 				FD76C0BB15ABA296006F0D49 /* Answer.m in Sources */,
 				FD76C0C215ABC929006F0D49 /* StackOverflowManager.m in Sources */,
+				FD76C0CB15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +369,8 @@
 				FD76C0BF15ABC1E3006F0D49 /* QuestionCreationTests.m in Sources */,
 				FD76C0C315ABC929006F0D49 /* StackOverflowManager.m in Sources */,
 				FD76C0C815ABCE9E006F0D49 /* MockStackOverflowManagerDelegate.m in Sources */,
+				FD76C0CC15ABD923006F0D49 /* StackOverflowCommunicator.m in Sources */,
+				FD76C0CF15ABD962006F0D49 /* MockStackOverflowCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
