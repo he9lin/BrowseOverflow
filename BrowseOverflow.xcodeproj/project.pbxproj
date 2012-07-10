@@ -31,6 +31,9 @@
 		FD76C0B315AB8135006F0D49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B215AB8135006F0D49 /* Person.m */; };
 		FD76C0B415AB8135006F0D49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B215AB8135006F0D49 /* Person.m */; };
 		FD76C0B515AB9CE8006F0D49 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0A515AB519E006F0D49 /* Topic.m */; };
+		FD76C0B815ABA259006F0D49 /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0B715ABA259006F0D49 /* AnswerTests.m */; };
+		FD76C0BB15ABA296006F0D49 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BA15ABA296006F0D49 /* Answer.m */; };
+		FD76C0BC15ABA296006F0D49 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76C0BA15ABA296006F0D49 /* Answer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,10 @@
 		FD76C0AF15AB8112006F0D49 /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
 		FD76C0B115AB8135006F0D49 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		FD76C0B215AB8135006F0D49 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FD76C0B615ABA259006F0D49 /* AnswerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerTests.h; sourceTree = "<group>"; };
+		FD76C0B715ABA259006F0D49 /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
+		FD76C0B915ABA296006F0D49 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		FD76C0BA15ABA296006F0D49 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +159,8 @@
 				FD76C06A15AB4C86006F0D49 /* Supporting Files */,
 				FD76C0B115AB8135006F0D49 /* Person.h */,
 				FD76C0B215AB8135006F0D49 /* Person.m */,
+				FD76C0B915ABA296006F0D49 /* Answer.h */,
+				FD76C0BA15ABA296006F0D49 /* Answer.m */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -179,6 +188,8 @@
 				FD76C08E15AB4C87006F0D49 /* Supporting Files */,
 				FD76C0AE15AB8112006F0D49 /* PersonTests.h */,
 				FD76C0AF15AB8112006F0D49 /* PersonTests.m */,
+				FD76C0B615ABA259006F0D49 /* AnswerTests.h */,
+				FD76C0B715ABA259006F0D49 /* AnswerTests.m */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -307,6 +318,7 @@
 				FD76C0A615AB519E006F0D49 /* Topic.m in Sources */,
 				FD76C0AC15AB7B92006F0D49 /* Question.m in Sources */,
 				FD76C0B315AB8135006F0D49 /* Person.m in Sources */,
+				FD76C0BB15ABA296006F0D49 /* Answer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +333,8 @@
 				FD76C0B015AB8113006F0D49 /* PersonTests.m in Sources */,
 				FD76C0B415AB8135006F0D49 /* Person.m in Sources */,
 				FD76C0B515AB9CE8006F0D49 /* Topic.m in Sources */,
+				FD76C0B815ABA259006F0D49 /* AnswerTests.m in Sources */,
+				FD76C0BC15ABA296006F0D49 /* Answer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

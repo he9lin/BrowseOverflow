@@ -18,5 +18,6 @@
 - (id)initWithName:(NSString *)newName tag:(NSString *)newTag;
 - (NSArray *)recentQuestions;
 - (void)addQuestion: (Question *)question;
+- (NSArray *)sortQuestionsLatestFirst: (NSArray *)questionList;
 
 @end

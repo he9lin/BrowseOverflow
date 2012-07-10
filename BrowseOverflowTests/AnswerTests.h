@@ -1,5 +1,5 @@
 //
-//  QuestionTests.h
+//  AnswerTests.h
 //  BrowseOverflow
 //
 //  Created by Lin He on 7/9/12.
@@ -10,13 +10,11 @@
 //  See Also: http://developer.apple.com/iphone/library/documentation/Xcode/Conceptual/iphone_development/135-Unit_Testing_Applications/unit_testing_applications.html
 
 #import <SenTestingKit/SenTestingKit.h>
-@class Question;
 @class Answer;
 
-@interface QuestionTests : SenTestCase {
-    Question *question;
-    Answer *lowScore;
-    Answer *highScore;
+@interface AnswerTests : SenTestCase {
+    Answer *answer;
+    Answer *otherAnswer;
 }
 
 @end
