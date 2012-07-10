@@ -47,16 +47,7 @@
     NSArray *questions = [questionBuilder
                           questionsFromJSON: objectNotation error: &error];
     if (!questions) {
-        NSDictionary *errorInfo = nil;
-        if (error) {
-            errorInfo = [NSDictionary dictionaryWithObject: error
-                                                    forKey: NSUnderlyingErrorKey];
-        }
-        NSError *reportableError = [NSError
-                                    errorWithDomain: StackOverflowManagerError
-                                    code: StackOverflowManagerErrorQuestionSearchCode
-                                    userInfo: errorInfo];
-        [delegate fetchingQuestionsFailedWithError: reportableError];
+        [self tellDelegateAboutQuestionSearchError:error];
     }
 }
 

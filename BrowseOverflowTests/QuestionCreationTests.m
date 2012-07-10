@@ -20,6 +20,7 @@
     MockStackOverflowManagerDelegate *delegate;
     NSError *underlyingError;
     MockStackOverflowCommunicator *communicator;
+    FakeQuestionBuilder *builder;
 }
 
 - (void)setUp {
@@ -34,6 +35,8 @@
     
     communicator = [[MockStackOverflowCommunicator alloc] init];
     mgr.communicator = communicator;
+    
+    builder = [[FakeQuestionBuilder alloc] init];
 }
 
 - (void)tearDown {
@@ -83,7 +86,6 @@
 }
 
 - (void)testQuestionJSONIsPassedToQuestionBuilder {
-    FakeQuestionBuilder *builder = [[FakeQuestionBuilder alloc] init];
     mgr.questionBuilder = builder;
     [mgr receivedQuestionsJSON: @"Fake JSON"];
     STAssertEqualObjects(builder.JSON, @"Fake JSON",
@@ -92,7 +94,6 @@
 }
 
 - (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails {
-    FakeQuestionBuilder *builder = [[FakeQuestionBuilder alloc] init];
     builder.arrayToReturn = nil;
     builder.errorToSet = underlyingError;
     mgr.questionBuilder = builder;
